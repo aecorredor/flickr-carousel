@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <p className="App-intro">
-          Flickr Carousel
+          Flickr Slideshow
         </p>
 
         <FlickrSlideshow />
