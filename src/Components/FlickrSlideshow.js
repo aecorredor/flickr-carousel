@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { css } from 'emotion';
 import debounce from 'lodash.debounce';
 import get from 'lodash.get';
-import isEmpty from 'lodash.isempty';
 
 import FlickrServices from '../services/flickr-services';
 
