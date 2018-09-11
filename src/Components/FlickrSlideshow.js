@@ -54,6 +54,7 @@ export default class FlickrSlideshow extends Component {
     const parsedSearchTerm = searchTerm.trim();
     const pressedKeyIsBackspace = this.state.keyPressed === 'Backspace';
 
+
     this.setState({ searchTerm }, () => {
       if (!parsedSearchTerm || parsedSearchTerm.length < 2 || pressedKeyIsBackspace) {
         return;
@@ -68,7 +69,6 @@ export default class FlickrSlideshow extends Component {
   }
 
   handlePhotoChange(newSelectedPhoto) {
-    console.log('newSelectedPhoto', newSelectedPhoto)
     this.setState({ selectedPhoto: newSelectedPhoto });
   }
 

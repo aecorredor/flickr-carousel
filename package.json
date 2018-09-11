@@ -29,7 +29,7 @@
     "setupFiles": [
       "./test/jestSetup.js"
     ],
-    "setupTestFrameworkScriptFile": "./test/addEmotionSnapshotSerializer.js",
+    "setupTestFrameworkScriptFile": "./test/jestEmotionSetup.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
