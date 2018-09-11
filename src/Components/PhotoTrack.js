@@ -36,8 +36,8 @@ export default class PhotoTrack extends Component {
     this.handlePhotoClick = this.handlePhotoClick.bind(this);
   }
 
-  componentDidUpdate() {
-    if (this.props.selectedPhoto !== this.state.selectedPhoto) {
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedPhoto !== this.props.selectedPhoto) {
       this.setState({ selectedPhoto: this.props.selectedPhoto });
     }
   }

@@ -44,19 +44,8 @@ export default class Carousel extends Component {
     this.handleRightArrowClick = this.handleRightArrowClick.bind(this);
   }
 
-  // Cannot use getDerivedStateFromProps because it gets called with old props from parent,
-  // because it happens before the parent updates its own state with the handlePhotoChange
-  // callback. So we resort to using componentDidUpdate in this case.
-  // static getDerivedStateFromProps(props, state) {
-  //   if (props.selectedPhoto !== state.selectedPhoto) {
-  //     return { selectedPhoto: props.selectedPhoto };
-  //   }
-
-  //   return null;
-  // }
-
-  componentDidUpdate() {
-    if (this.props.selectedPhoto !== this.state.selectedPhoto) {
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedPhoto !== this.props.selectedPhoto) {
       this.setState({ selectedPhoto: this.props.selectedPhoto });
     }
   }
