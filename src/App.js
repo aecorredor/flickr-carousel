@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Carousel from './Components/Carousel';
+import FlickrSlideshow from './components/FlickrSlideshow';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
           Flickr Carousel
         </p>
 
-        <Carousel />
+        <FlickrSlideshow />
       </div>
     );
   }

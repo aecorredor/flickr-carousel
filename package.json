@@ -9,6 +9,7 @@
     "lodash.get": "^4.4.2",
     "lodash.isempty": "^4.4.0",
     "materialize-css": "^0.100.2",
+    "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
